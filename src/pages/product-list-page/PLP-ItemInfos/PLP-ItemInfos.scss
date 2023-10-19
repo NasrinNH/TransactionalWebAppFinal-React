@@ -1,0 +1,35 @@
+@import "../../../sass/variables";
+
+.card-content-ItemInfos {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin-right: 0px;
+  border: 1px solid $light-border;
+  border-radius: 10px;
+  width: 410px;
+  color: $black;
+
+  background-color: $light-background-card;
+
+  &:hover {
+    box-shadow: $dark-border 0px 7px 29px 0px;
+  }
+}
+
+.card-image-ItemInfos {
+  width: 150px;
+  height: 150px;
+  background-color: $dark-border;
+}
+.card-body-ItemInfos {
+  padding: 40px 10px;
+  word-wrap: break-word;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.on-hover-card-content-ItemInfos {
+  box-shadow: 5px 10px $light-border;
+}

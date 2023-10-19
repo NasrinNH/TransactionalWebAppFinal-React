@@ -1,0 +1,204 @@
+@import "../../sass/variables";
+
+.Wrapper-SignInPage {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background-color: $light-background;
+
+  .Left-container-SignInPage {
+    width: 60%;
+    text-align: center;
+    padding: 70px 0;
+
+    .Head-Left-container-SignInPage {
+      font-size: 65px;
+      font-weight: bolder;
+      padding: 10px 30px;
+      margin: 10px 25px;
+    }
+    .Sub-Head-Left-container-SignInPage {
+      font-size: 36px;
+    }
+
+    .icon-Left-container-SignInPage {
+      .bg-icon-Left-SignInPage-red {
+        margin: 20px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        background-color: $red;
+        border: 1px solid $red;
+        border-radius: 100%;
+        padding: 30px;
+      }
+      .bg-icon-Left-SignInPage-blue {
+        font-size: 40px;
+        color: #fff;
+        background-color: #1877f2;
+        border: 1px solid #1877f2;
+        border-radius: 100%;
+        padding: 30px;
+      }
+    }
+
+    .line-divider {
+      display: flex;
+      margin-top: 20px;
+      hr {
+        width: 40%;
+      }
+    }
+    .signIn-form {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-around;
+      align-items: stretch;
+      padding: 20px 80px;
+
+      .email,
+      .password {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        input {
+          font-size: 18px;
+          padding: 15px;
+          border-radius: 20px;
+          border: 1px solid $light-border;
+          margin: 10px 0;
+        }
+        label {
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+      .password-reasign {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 15px;
+        .forget-password {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .signIn-form-btn-container {
+        display: flex;
+        justify-content: center;
+        .signIn-form-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 280px;
+          padding: 20px;
+          background-color: $red;
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          border: 1px solid $red;
+          border-radius: 30px;
+          margin-top: 30px;
+          &:hover {
+            box-shadow: $red 0px 2px 8px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-container-SignInPage {
+    width: 40%;
+    background-color: $red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Head-Right-container-SignInPage {
+      font-size: 65px;
+      font-weight: bolder;
+      padding: 10px 30px;
+      margin: 10px 25px;
+      color: #fff;
+    }
+    .Sub-Head-Right-container-SignInPage {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+    }
+    .signIn-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: stretch;
+      padding: 20px 20px;
+
+      .signUp-inputs {
+        margin-bottom: 20px;
+        .email,
+        .password,
+        .f_name,
+        .l_name {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5px;
+          input {
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px solid $light-border;
+            margin: 5px 0;
+          }
+          label {
+            font-size: 16px;
+            text-align: left;
+            padding-left: 20px;
+          }
+        }
+
+        .successful {
+          p {
+            text-align: center;
+            color: #fff;
+          }
+        }
+      }
+
+      .signUp-form-btn-container {
+        display: flex;
+        justify-content: center;
+
+        .signUp-form-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 280px;
+          padding: 20px;
+          background-color: #fff;
+          color: $red;
+          font-size: 18px;
+          font-weight: bold;
+          border: 1px solid $red;
+          border-radius: 30px;
+          margin-top: 80px;
+          &:hover {
+            box-shadow: $light-border 0px 2px 8px 0px;
+          }
+        }
+      }
+    }
+    .close-icon {
+      position: absolute;
+      top: 200px;
+      right: 200px;
+      font-size: 40px;
+      font-weight: 50;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

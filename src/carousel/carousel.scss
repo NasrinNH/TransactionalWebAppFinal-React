@@ -1,0 +1,80 @@
+@import "../sass/variables";
+
+.carousel-container {
+  display: flex;
+  position: sticky;
+  height: 250px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  z-index: 1;
+
+  .carousel-icon-prev,
+  .carousel-icon-next {
+    position: sticky;
+    margin: 40px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: $red;
+    opacity: 0.7; /* 40% opacity */
+
+    cursor: pointer;
+
+    &:hover {
+      font-size: 45px;
+      opacity: 1; /* 40% opacity */
+    }
+  }
+
+  .carousel-slide-container {
+    justify-content: center;
+    // width: 80%;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel-slide-card {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 5px;
+      border: 1px solid $dark-border;
+      background-color: $light-background;
+      border-radius: 10px;
+      
+
+      .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .carousel-description {
+
+          margin-top: 10px;
+          > span {
+            display: block;
+          }
+          .original-price {
+            text-decoration: line-through;
+          }
+          .save-price {
+            margin-left: 5px;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

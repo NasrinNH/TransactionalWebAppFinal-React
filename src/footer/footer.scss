@@ -1,0 +1,55 @@
+@import "../../src/sass/variables";
+
+.footer-container {
+  height: auto;
+  padding-top: 40px;
+}
+.divider {
+  background-color: $light-border;
+}
+.footer_similarProduct_sameGroup_container {
+  .footer-border-wrapper {
+    .footer-container {
+      border: 1px solid $light-border;
+      background-color: $dark-background-footer;
+      color: #fff;
+
+      .footer-general-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 600px;
+        gap: 10px;
+        padding: 20px 300px 40px;
+
+        .footer-info-detail {
+          font-size: $footer-body-font-size;
+          font-weight: $footer-body-weight;
+          &:hover {
+            font-weight: $footer-body-weight-hover;
+          }
+        }
+      }
+
+      .footer-wrapper {
+        padding: 20px;
+
+        .footer-container-GroupItemsList {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: auto;
+          width: 100px;
+          gap: 10px;
+          padding: 20px;
+          margin-top: 20px;
+        }
+        .footer-card-container {
+          width: 150px;
+          margin-top: 20px;
+          font-size: $button-font-size;
+          font-weight: $button-font-weight;
+        }
+      }
+    }
+  }
+}

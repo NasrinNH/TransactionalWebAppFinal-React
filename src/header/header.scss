@@ -1,0 +1,141 @@
+@import "../sass/variables";
+
+@mixin btn {
+}
+
+header {
+  height: 150px;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #fff;
+  .header-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    background-color: #e31812;
+    padding: 20px;
+    border: 2px solid #e31812;
+
+    .header-grocery-name {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      .header-logo {
+        img {
+          height: 130px;
+          width: auto;
+        }
+      }
+      h1 {
+        color: #fff;
+        padding: 20px;
+      }
+      .header-logo-LinkedText {
+        text-decoration: none;
+      }
+    }
+
+    .header-searchBar {
+      display: flex;
+      padding-top: 0;
+      height: 40.5px;
+
+      .header-searchBar-productName {
+        width: 700px;
+        font-size: 16px;
+        border: $light-border;
+        background-color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      .header-searchBar-icon {
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 11px 10px 10px 10px;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: $dark-border 0px 7px 29px 0px;
+          background-color: #fff;
+          color: $red;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .sign-in-user {
+      display: flex;
+      align-items: center;
+
+      .user-image {
+        margin-right: 5px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      span {
+        font-size: 80%;
+        display: block;
+        color: white;
+      }
+    }
+
+    .header-right-side {
+      display: flex;
+      align-items: center;
+
+      div {
+        margin-right: 15px;
+      }
+      .cart {
+        .btn-cart {
+          position: relative;
+
+          .item-Count {
+            box-sizing: border-box;
+            position: absolute;
+            top: -20px;
+            right: -15px;
+            color: $red;
+            border-radius: 100%;
+            background-color: #fff;
+            width: 20px;
+            height: 20px;
+            padding: 0px 4px;
+          }
+
+          .header-cart-icon {
+            font-weight: bold;
+            margin-left: 3px;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      a:hover {
+        border-bottom: 1px solid #fff;
+      }
+
+      .language-container {
+        cursor: pointer;
+        .language:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

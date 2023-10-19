@@ -1,0 +1,112 @@
+@import "../../sass/variables";
+
+.container-PIC {
+  display: flex;
+  justify-content:center;
+  margin-bottom: 50px auto;
+  padding: 20px;
+  align-items: center;
+
+
+  .productPrice-PIC {
+    padding-bottom: 20px;
+    color: $black;
+    span {
+      color: $black;
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    .productPrice-PIC-LinkedText{
+      color: $red;
+      text-decoration: none;
+    }
+  }
+  
+  .productName-PIC {
+    padding-bottom: 20px;
+    color: $red;
+
+    span {
+      color: $black;
+      margin-right: 10px;
+      font-size: 24px;
+    }
+  }
+  .productAvailability-PIC {
+    color: $black;
+    font-size: 24px;
+  }
+
+  .wrapper-image-PIC {
+    border: 1px solid $light-border;
+    border-radius: 20px;
+    width: 410px;
+    height: 410px;
+    background-color: $light-background-card;
+    
+    &:hover {
+      box-shadow: $dark-border 0px 7px 29px 0px;
+    }
+    .image-PIC {
+      width: 60%;
+      margin: 15%;
+
+    }
+  }
+
+  .input-btn-container-PIC {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: none;
+
+    .counter-PIC {
+      border: 1px solid $black;
+      border-radius: 5px;
+      padding-left: 10px;
+      width: 180px;
+      height: 36px;
+
+    }
+
+    .btn-addToCart {
+      width: 180px;
+      height: 40px;
+      margin-left: 70px;
+      margin-right: 50px;
+      padding: 20px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: $red;
+      color: #fff;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      padding-top: 10px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: $dark-border 0px 7px 29px 0px;
+        font-size: 17px;
+      }
+    }
+    .btn-addToCart-disabled {
+      
+      width: 180px;
+      height: 40px;
+      margin-left: 70px;
+      margin-right: 50px;
+      padding: 20px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      background-color: rgba(100, 100, 111, 0.2);
+      color: #fff;
+      border-radius: 5px;
+      border: 1px solid;
+      border: 1px solid $black;
+      border-radius: 5px;
+      padding-top: 10px;
+
+    }
+  }
+}

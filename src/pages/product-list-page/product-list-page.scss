@@ -1,0 +1,30 @@
+@import "../../sass/variables";
+
+.PLP-border-wrapper {
+ 
+  .PLP-container {
+    border: 1px solid $light-border;
+    .PLP-container-GroupItems {
+      padding: 20px;
+    }
+
+    .PLP-wrapper {
+      padding: 20px;
+
+      .PLP-container-GroupItemsList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 800px;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 20px;
+
+        .PLP-card-container {
+          width: 300px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

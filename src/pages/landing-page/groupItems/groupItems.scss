@@ -1,0 +1,27 @@
+@import "../../../sass/variables";
+
+.container-GroupItems {
+  .wrapper-GroupItems {
+    background-color: $light-background;
+    padding: 20px 80px 20px 50px;
+    display: flex;
+    align-items: center;
+ 
+    .image-GroupItems {
+      width: 55px;
+      height: 55px;
+      background-color: $dark-border;
+      margin-right: 50px;
+      cursor:none;
+
+    }
+
+    h1 {
+      color: $red;
+      margin: 0;
+
+    }
+ 
+  }
+
+}

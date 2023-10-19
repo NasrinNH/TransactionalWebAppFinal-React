@@ -1,0 +1,41 @@
+@import "../sass/variables";
+
+@mixin btn {
+}
+
+
+.header-searchBar {
+    display: flex;
+    padding-top: 0;
+    height: 40.5px;
+margin: 0 50px;
+
+width: 500px;
+    .header-searchBar-productName {
+   
+      font-size: 16px;
+      border: $light-border;
+      background-color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .header-searchBar-icon {
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 11px 10px 10px 10px;
+      color: #fff;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: $dark-border 0px 7px 29px 0px;
+        background-color: #fff;
+        color: $red;
+        font-weight: bolder;
+      }
+    }
+  }

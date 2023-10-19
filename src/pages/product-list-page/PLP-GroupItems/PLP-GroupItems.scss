@@ -1,0 +1,28 @@
+@import "../../../sass/variables";
+
+.PLP-container-GroupItems {
+  .PLP-wrapper-GroupItems {
+    background-color: $light-background;
+    padding: 20px 80px 20px 50px;
+    display: flex;
+    align-items: center;
+
+    .PLP-image-GroupItems {
+      width: 55px;
+      height: 55px;
+      background-color: $dark-border;
+      margin-right: 50px;
+    }
+    h1 {
+      color: $red;
+
+      margin: 0;
+
+      &:hover {
+        box-shadow: $dark-border 0px 2px 1px 0px;
+        text-shadow: 1px 2px 2px pink;
+        font-weight: bolder;
+      }
+    }
+  }
+}
