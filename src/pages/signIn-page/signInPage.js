@@ -128,7 +128,7 @@ const SignInPage = ({ onUserSignedIn }) => {
             <span>{translate("or")}</span>
             <hr className="line-size" />
           </div>
-          <form className="signIn-form" onSubmit={{ onSignInWithEmail }}>
+          <form className="signIn-form" onSubmit={onSignInWithEmail}>
             <div className="email">
               <input
                 type="email"
