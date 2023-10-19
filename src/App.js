@@ -14,8 +14,10 @@ import { useNavigate } from "react-router-dom";
 import { I18nPropvider, LOCALES } from "./i18nProvider";
 
 const App = () => {
-  const URL_GROUPS_API = "http://localhost:4000/groups";
-  const URL_PRODUCTS_API = "http://localhost:4000/products";
+  const URL_GROUPS_API =
+    "https://transactionalwebappfinal-node.onrender.com/groups";
+  const URL_PRODUCTS_API =
+    "https://transactionalwebappfinal-node.onrender.com/products";
 
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
   const [signInUser, setSignInUser] = useState({});
@@ -31,7 +33,7 @@ const App = () => {
     setCartItemsList([...cartItemsList, data]);
   };
 
-  console.log('cartItemsList: ', cartItemsList);
+  console.log("cartItemsList: ", cartItemsList);
 
   const cartItemsTotalCount = cartItemsList.reduce(
     (prev, cur) => prev + cur.count,
@@ -56,7 +58,6 @@ const App = () => {
   const filteredProducts = productsInfo.filter((product) =>
     product.name.includes(searchValue)
   );
-
 
   const promotionProducts = productsInfo.filter((p) => p.isOnPromotion);
 
@@ -99,12 +100,13 @@ const App = () => {
           onSearchItemChange={handleSearchItem}
         />
 
-{showSearchComponent && (
-          <LandingPage groups={groups} products={filteredProducts}>
-          </LandingPage>
-      )}
+        {showSearchComponent && (
+          <LandingPage
+            groups={groups}
+            products={filteredProducts}
+          ></LandingPage>
+        )}
         {!showSearchComponent && (
-
           <Routes>
             <Route
               path="/"
@@ -131,7 +133,10 @@ const App = () => {
               element={<SignInPage onUserSignedIn={handleUserSignedIn} />}
             />
 
-            <Route path="/cart" element={<CartPage cartItems={cartItemsList} />} />
+            <Route
+              path="/cart"
+              element={<CartPage cartItems={cartItemsList} />}
+            />
             <Route
               path="/groups/:code"
               element={
@@ -141,7 +146,8 @@ const App = () => {
               }
             />
             <Route path="*" element={<NotFound />} />
-          </Routes>)}
+          </Routes>
+        )}
         <Footer />
       </>
     </I18nPropvider>

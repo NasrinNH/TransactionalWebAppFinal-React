@@ -63,7 +63,7 @@ const SignInPage = ({ onUserSignedIn }) => {
   }
 
   function fetchUser(data) {
-    fetch("http://localhost:4000/signin", {
+    fetch("https://transactionalwebappfinal-node.onrender.com/signin", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -92,7 +92,7 @@ const SignInPage = ({ onUserSignedIn }) => {
   }
 
   function signUpUser(data) {
-    fetch("http://localhost:4000/signup", {
+    fetch("https://transactionalwebappfinal-node.onrender.com/signup", {
       method: "POST",
       headers: {
         "content-type": "application/json",
